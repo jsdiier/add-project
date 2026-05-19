@@ -6,7 +6,7 @@ function App() {
   const [result, setResult] = useState(null);
 
   const calculate = async () => {
-    const res = await fetch(`http://localhost:8000/add?a=${a}&b=${b}`);
+    const res = await fetch(`https://add-project-i98e.onrender.com/add?a=${a}&b=${b}`);
     const data = await res.json();
     setResult(data.result);
   };
