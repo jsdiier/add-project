@@ -5,7 +5,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://add-project-eight.vercel.app"
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
